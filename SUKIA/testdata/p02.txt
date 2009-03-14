@@ -1,0 +1,978 @@
+"---------------------------------------------------- TAXONOMIA DE PRUEBA PARA LA TESIS. PARTE 2-------------------------------------------"
+
+| t1 t2 t3 t4 t5 s a vd gh |
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 1 +++++++++++++++++++++++++++++++++++++ "
+t1 := Taxon new.
+t1 name: #Chromodorididae.
+t1 level: #family.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+s weight: 1.0.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #alargado.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #ovalado.
+vd weight: 0.1.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #longitud.
+
+vd := ValueDescriptor new.
+vd setAsRangeWithUnit: #cm.
+vd lowerBound: 0.3.
+vd upperBound: 4.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #conformacion.
+
+vd := ValueDescriptor new.
+vd value: #tiene_cerata.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t1 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #pie.
+s weight: 0.8.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #sobresale_al_manto.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanquecino.
+vd weight: 0.7.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #crema.
+vd weight: 0.7.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #gris_oscuro_casi_negro.
+vd weight: 0.2.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t1 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #branquia.
+
+a := Attribute newWithOneLevel.
+a name: #posicion_durante_desplazamiento.
+
+vd := ValueDescriptor new.
+vd value: #hacia_atras.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #posicion_del_ano_con_respecto_a_la_branquia.
+
+vd := ValueDescriptor new.
+vd value: #en_el_centro.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #numero_hojas_branquiales.
+
+vd := ValueDescriptor new.
+vd setAsRange.
+vd lowerBound: 6.
+vd upperBound: 9.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma_hojas_branquiales.
+
+vd := ValueDescriptor new.
+vd value: #bipinnada.
+vd weight: 0.6.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #tripinnada.
+vd weight: 0.4.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t1 SAVdescription: s.
+
+"-----------------------Structure No. 4---------------------"
+s := Structure new.
+s name: #manto.
+
+a := Attribute newWithOneLevel.
+a name: #textura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #con_tuberculos.
+vd weight: 0.4.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #ondulado.
+vd weight: 0.3.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #textura_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 0.7.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t1 SAVdescription: s.
+
+"-----------------------Structure No. 5---------------------"
+s := Structure new.
+s name: #glandulas_del_manto.
+
+a := Attribute newWithOneLevel.
+a name: #posicion.
+
+vd := ValueDescriptor new.
+vd value: #delante.
+vd weight: 0.2.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #delante_y_atras.
+vd weight: 0.2.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #alrededor_del_manto.
+vd weight: 0.4.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t1 SAVdescription: s.
+
+"-----------------------Structure No. 6---------------------"
+s := Structure new.
+s name: #rinoforos.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #laminados.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #numero_de_laminillas.
+
+vd := ValueDescriptor new.
+vd setAsRange.
+vd lowerBound: 6.
+vd upperBound: 20.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t1 SAVdescription: s.
+
+"-----------------------Structure No. 7---------------------"
+s := Structure new.
+s name: #tentaculos_orales.
+
+a := Attribute newWithOneLevel.
+a name: #contextura.
+
+vd := ValueDescriptor new.
+vd value: #macizo.
+vd weight: 0.7.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #surcado.
+vd weight: 0.2.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t1 SAVdescription: s.
+
+"-----------------------Grouping Heuristic No. 1---------------------"
+gh := GroupingHeuristic newWithOneLevel.
+gh name: #alimenatcion.
+gh weight: 1.0.
+vd := ValueDescriptor new.
+vd value: #esponjas.
+vd weight: 1.0.
+(gh values) valueDescriptorWithUniqueValue: vd for: GroupingHeuristic oneLevel.
+t1 GHdescription: gh.
+
+"-----------------------Grouping Heuristic No. 2---------------------"
+gh := GroupingHeuristic newWithOneLevel.
+gh name: #profundidad_donde_se_encuentra.
+gh weight: 1.0.
+vd := ValueDescriptor new.
+vd setAsRangeWithUnit: #m.
+vd lowerBound: 0.
+vd upperBound: 20.
+(gh values) valueDescriptorWithUniqueValue: vd for: GroupingHeuristic oneLevel.
+t1 GHdescription: gh.
+
+"-----------------------Grouping Heuristic No. 3---------------------"
+gh := GroupingHeuristic newWithOneLevel.
+gh name: #medio_de_preservacion_tenido.
+gh weight: 1.0.
+
+vd := ValueDescriptor new.
+vd value: #azul_marino.
+vd weight: 1.0.
+(gh values) valueDescriptorWithUniqueValue: vd for: GroupingHeuristic oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #celeste.
+vd weight: 0.8.
+(gh values) valueDescriptorWithUniqueValue: vd for: GroupingHeuristic oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #amarillento.
+vd weight: 0.2.
+(gh values) valueDescriptorWithUniqueValue: vd for: GroupingHeuristic oneLevel.
+
+t1 GHdescription: gh.
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 2 +++++++++++++++++++++++++++++++++++++ "
+t2 := Taxon new.
+t2 name: #Chromodoris.
+t2 level: #genus.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+s weight: 1.0.
+
+a := Attribute newWithOneLevel.
+a name: #posicion_de_la_banda_dorsal_continua.
+
+vd := ValueDescriptor new.
+vd value: #centro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #brillante_azul_rojo_blanco_anaranjado_purpura.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma_ventral.
+
+vd := ValueDescriptor new.
+vd value: #aplanado.
+vd weight: 0.6.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t2 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #manto.
+s weight: 0.8.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #elongado_y_ovalado.
+vd weight: 0.7.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #contextura.
+
+vd := ValueDescriptor new.
+vd value: #con_glandulas.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t2 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #radula.
+s weight: 0.3.
+
+a := Attribute newWithOneLevel.
+a name: #forma_de_los_dientes.
+
+vd := ValueDescriptor new.
+vd value: #denticulados.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #posicion_del_diente_mas_conspicuo.
+
+vd := ValueDescriptor new.
+vd value: #centro.
+vd weight: 0.5.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t2 SAVdescription: s.
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 3 +++++++++++++++++++++++++++++++++++++ "
+t3 := Taxon new.
+t3 name: #Chromodoris_sphoni.
+t3 level: #species.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #longitud.
+
+vd := ValueDescriptor new.
+vd setAsRangeWithUnit: #cm.
+vd lowerBound: 0.3.
+vd upperBound: 0.35.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #ovalado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #conformacion.
+
+vd := ValueDescriptor new.
+vd value: #no_tiene_tuberculos_ni_espiculas.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #verde_fosforescente.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #cafe_rojizo.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_fondo.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #crema.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #contextura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t3 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #branquia.
+s weight: 0.9.
+
+"#######################################################
+NOTA: Este dato no se agrega porque entra en conflicto con el dato
+de la familia a la que pertenece.
+
+a := Attribute newWithOneLevel.
+a name: #numero_hojas_branquiales.
+
+vd := ValueDescriptor new.
+vd setAsRange.
+vd lowerBound: 7.
+vd upperBound: 10.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+#######################################################"
+
+a := Attribute newWithOneLevel.
+a name: #forma_hojas_branquiales.
+
+vd := ValueDescriptor new.
+vd value: #unipinnada.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #blanquecino.
+vd weight: 0.9.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_los_apices.
+
+vd := ValueDescriptor new.
+vd value: #morado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t3 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #manto.
+s weight: 1.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_patron_de_rayas_en_forma_de_cruz.
+
+vd := ValueDescriptor new.
+vd value: #rojo_violaceo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #granate.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_puntos_conspicuos.
+
+vd := ValueDescriptor new.
+vd value: #amarillo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_linea_exterior_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #naranja.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_linea_interior_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #rojo_violaceo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_los_puntos_irregulares_localizados_entre_las_lineas_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #amarillo_oro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t3 SAVdescription: s.
+
+"-----------------------Structure No. 4---------------------"
+s := Structure new.
+s name: #rinoforos.
+s weight: 0.9.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #blanquecino.
+vd weight: 0.9.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_los_apices.
+
+vd := ValueDescriptor new.
+vd value: #morado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t3 SAVdescription: s.
+
+"-----------------------Structure No. 5---------------------"
+s := Structure new.
+s name: #cola.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #violaceo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 0.9.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+
+vd := ValueDescriptor new.
+vd value: #crema.
+vd weight: 0.9.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #verde_azulado_moteado_de_amarillo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t3 SAVdescription: s.
+
+"-----------------------Structure No. 6---------------------"
+s := Structure new.
+s name: #pie.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco_hialino.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #blanco_opaco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t3 SAVdescription: s.
+
+"-----------------------Structure No. 7---------------------"
+s := Structure new.
+s name: #aparato_genital.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #tamano_de_la_glandula_vestibular.
+
+vd := ValueDescriptor new.
+vd value: #pequeno.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t3 SAVdescription: s.
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 4 +++++++++++++++++++++++++++++++++++++ "
+t4 := Taxon new.
+t4 name: #Chromodoris_clenchi.
+t4 level: #species.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #rojo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #rojizo.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #cafesuzco.
+vd weight: 0.5.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #blanquecino.
+vd weight: 0.1.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t4 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #manto.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_numerosas_manchas.
+
+vd := ValueDescriptor new.
+vd value: #blanco_con_borde_amarillento.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_linea_exterior_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #rojizo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #visibilidad_linea_exterior_del_borde_cuando_muerto.
+
+vd := ValueDescriptor new.
+vd value: #ninguna.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t4 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #rinoforos.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_dos_manchas_localizadas_en_el_centro.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #visibilidad_de_dos_manchas_localizadas_en_el_centro_cuando_muerto.
+
+vd := ValueDescriptor new.
+vd value: #ninguna.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_la_base.
+
+s attribute: a.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_los_apices.
+
+vd := ValueDescriptor new.
+vd value: #rojo_purpura.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 0.1.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t4 SAVdescription: s.
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 5 +++++++++++++++++++++++++++++++++++++ "
+t5 := Taxon new.
+t5 name: #Chromodoris_kempfi.
+t5 level: #species.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #manto.
+s weight: 1.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #amarillo_brillante.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #crema_blanquecino.
+vd weight: 0.1.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #verde_azulado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #verde_grisaceo.
+vd weight: 0.1.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_la_banda_dorsal_continua.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_las_manchas.
+
+vd := ValueDescriptor new.
+vd value: #azul_oscuro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #negro.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #celeste.
+vd weight: 0.5.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t5 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #rinoforos.
+s weight: 0.8.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #purpura.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #de_azul_a_purpura.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #celeste_palido.
+vd weight: 0.5.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t5 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #branquia.
+s weight: 0.8.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #purpura.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #de_azul_a_purpura.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #celeste_palido.
+vd weight: 0.5.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t5 SAVdescription: s.
+
+" ************************************  Taxonomy *************************************"
+(SukiaSystem taxonomy add: t1 linkedTo: (SukiaSystem taxonomy rootTaxon)) = nil ifTrue: [t1 inspect].
+(SukiaSystem taxonomy add: t2 linkedTo: t1) = nil ifTrue: [t2 inspect].
+(SukiaSystem taxonomy add: t3 linkedTo: t2) = nil ifTrue: [t3 inspect].
+(SukiaSystem taxonomy add: t4 linkedTo: t2) = nil ifTrue: [t4 inspect].
+(SukiaSystem taxonomy add: t5 linkedTo: t2) = nil ifTrue: [t5 inspect].
+
+"SukiaSystem inspect."

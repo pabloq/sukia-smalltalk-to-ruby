@@ -1,0 +1,1060 @@
+"---------------------------------------------------- CASOS-PROBLEMA DE PRUEBA PARA LA MC. PARTE 8-------------------------------------------"
+
+"Caso 1
+INBIOCRI0014955775
+Taxonomìa conocida: (Aplysidae) Phyllaplysia engeli
+Meta: FAMILIA
+Descripción: Presencia de dos ojos bien marcados; cuerpo blanco; visceras visibles a traves del manto; cuerpo ovalado y alargado; presencia de parapodios poco desarrollados."
+
+| s a vd | 
+
+SukiaSystem reasoner identGoal: #family.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #ovalado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'parapodio'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #grado_de_desarrollo.
+
+vd := ValueDescriptor new.
+vd value: #poco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 2
+INBIOCRI001497407
+Taxonomìa conocida: (Chromodorididae) Chromodoris grahami
+Meta: ESPECIE o FAMILIA
+Descripción: Cuerpo de color anaranjado claro; rinoforos y branquias anaranjado claro; branquias tripinnadas; pie sobresale al manto; manto ondulado; dorso (manto) liso."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #species.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #anaranjado_claro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'rinoforos'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #anaranjado_claro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 3---------------------------"
+s := Structure new.
+s name: 'branquia'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #anaranjado_claro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma_hojas_branquiales.
+
+vd := ValueDescriptor new.
+vd value: #tripinnada.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 4---------------------------"
+s := Structure new.
+s name: 'pie'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #sobresale_al_manto.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 5---------------------------"
+s := Structure new.
+s name: 'manto'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #ondulado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #textura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 3
+INBIOCRI001496053
+Taxonomìa conocida: (Chromodorididae) Chromodoris tyrinna
+Meta: ESPECIE
+Descripción: Cuerpo de color blanco; ovalado; pie sobresale al manto; pie de color blanco; ausencia de espiculas; dorso (manto) liso; no hay presencia de glandulas; branquias y rinoforos blancos; branquias tripinnadas."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #species.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #ovalado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #conformacion.
+
+vd := ValueDescriptor new.
+vd value: #no_tiene_espiculas.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'pie'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #sobresale_al_manto.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 3---------------------------"
+s := Structure new.
+s name: 'manto'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #textura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 4---------------------------"
+s := Structure new.
+s name: 'rinoforos'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 5---------------------------"
+s := Structure new.
+s name: 'branquia'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma_hojas_branquiales.
+
+vd := ValueDescriptor new.
+vd value: #tripinnada.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 4
+INBIOCRI001495961
+Taxonomìa conocida: (Chromodorididae) Mexichromis antonii
+Meta: ESPECIE
+Descripción: Rinoforos azules; branquias con la base blanca y apices azules; cola sobresale al manto; cola de color azul; cuerpo blanco cremuzco o crema blanquecino; borde del manto melon tenue; forma del cuerpo alaragada y ovalada; no hay manchyas visibles en el dorso; no hay linea central visible; pie de color blanquecino."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #species.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'rinoforos'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #azul.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'branquia'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_los_apices.
+
+vd := ValueDescriptor new.
+vd value: #azul.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 3---------------------------"
+s := Structure new.
+s name: 'cola'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #azul.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+" *** PREGUNTAR *** "
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #sobresale_claramente_por_detras_del_notum.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 4---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #crema_blanquecino.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #alargado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 5---------------------------"
+s := Structure new.
+s name: 'manto'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #melon_tenue.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 6---------------------------"
+s := Structure new.
+s name: 'pie'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanquecino.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 5
+INBIOCRI001487479
+Taxonomìa conocida: (Chromodorididae) Glossodoris sedna
+Meta: ESPECIE
+Descripción: Cuerpo completamente blanco; dorso liso; borde del pie amarillo; borde del manto amarillo; cuerpo ovalado."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #species.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #ovalado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'manto'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #textura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #amarillo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 3---------------------------"
+s := Structure new.
+s name: 'pie'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #amarillo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 6
+INBIOCRI001496606
+Taxonomìa conocida: (Chromodorididae) Cadlina modesta
+Meta: GENERO
+Descripcion: Cuerpo ovalado y alargado; presencia de glandulas alrededor del manto; dorso cubierto por espiculas; rinoforos amarillentos; presencia de espiculas en la parte ventral; el pie no sobresale al manto; pie color blanco."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #genus.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #ovalado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'manto'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #contextura.
+
+vd := ValueDescriptor new.
+vd value: #con_glandulas.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 3---------------------------"
+s := Structure new.
+s name: 'rinoforos'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #amarillento.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 4---------------------------"
+s := Structure new.
+s name: 'pie'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #no_sobresale_al_manto.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 7
+INBIOCRI001498371
+Taxonomìa conocida: (Chromodorididae) Glossodoris dalli
+Meta: ESPECIE
+Descripcion: Cuerpo voluminoso, alargado y ovaldao; el pie sobresale al manto; color de los rinoforos blanco amarillentos con el raquis negro; branquias con la base café y los apices crema; dorso cubierto de numerosos tuberculos de color blanco cremuzco; numerosas manchas negras estan presentes alrededor del manto; presencia de numerosas manchas pequenas en todo el manto; color del fondo de café a verde militar; el borde del manto tiene una banda de color crema blanquecina; el pie esta rodeado por una banda blanquecina."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #species.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #consistencia.
+
+vd := ValueDescriptor new.
+vd value: #voluminoso.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #alargado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'pie'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #sobresale_al_manto.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 3---------------------------"
+s := Structure new.
+s name: 'rinoforos'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #blanco_amarillento.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_raquis.
+
+vd := ValueDescriptor new.
+vd value: #negro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 4---------------------------"
+s := Structure new.
+s name: 'branquia'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #cafe.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_los_apices.
+
+vd := ValueDescriptor new.
+vd value: #crema.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 5---------------------------"
+s := Structure new.
+s name: 'manto'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #textura.
+
+vd := ValueDescriptor new.
+vd value: #con_tuberculos.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_las_manchas.
+
+vd := ValueDescriptor new.
+vd value: #negro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_borde.
+
+vd := ValueDescriptor new.
+vd value: #crema_blanquecino.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 8
+INBIOCRI001496147
+Taxonomìa conocida: (Chromodorididae) Hypselodoris agassizii
+Meta: FAMILIA
+Descripcion: Cuerpo alargado; cola sobresale al manto; cuerpo color azul claro; borde del manto y del pie con presencia de una raya verde; lineas verdes en la parte dorsal interrumpidas; branquias y rinoforos de  color azul; presencia de manchas de color blanco en el manto y la parte ventral; dorso liso."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #family.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+"a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #alargado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a."
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #azul_palido.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+"s := Structure new.
+s name: 'cola'.
+s weight: 0.0.
+
+ *** PREGUNTAR *** 
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #sobresale_claramente_por_detras_del_notum.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+SukiaSystem reasoner structDescription: s."
+
+"---------------------------Structure No. 3---------------------------"
+s := Structure new.
+s name: 'manto'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_las_manchas.
+
+vd := ValueDescriptor new.
+vd value: #blanco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #textura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 4---------------------------"
+s := Structure new.
+s name: 'rinoforos'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #azul.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 5---------------------------"
+s := Structure new.
+s name: 'branquia'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #azul.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 9
+INBIOCRI001487477
+Taxonomìa conocida: (Aplysiidae) Aplysia dactylomela
+Meta: GENERO
+Descripcion: Tamaño de mas de 8 cm de longitud; cuerpo voluminoso y globoso; pie forma una suela; rinoforos sin papilas y (disposicion) enrollados; tentaculos orales enrollados longitudinalmente; tentaculos orales ms largos que los rinoforos; final del pie de forma apuntada; parapodios (disposicion) libres y bien desarrollados, fusionados posteriormente; coloracion del cuerpo es café con numerosas manchas grandes en forma de anillo, tambien de color café; tubersuclos del manto ausentes; tamño del foramen del manto es medio."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #genus.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #consistencia.
+
+vd := ValueDescriptor new.
+vd value: #voluminoso.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #cafe.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'rinoforos'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #contextura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 3---------------------------"
+s := Structure new.
+s name: 'parapodio'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #libre.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #grado_de_desarrollo.
+
+vd := ValueDescriptor new.
+vd value: #mucho.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #simetria.
+
+vd := ValueDescriptor new.
+vd value: #fusionados.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+(SukiaSystem reasoner identify) inspect.
+
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+"Caso 10
+INBIOCRI0011480529
+Taxonomìa conocida: (Aplysiidae) Dolabrifera dolabrifera
+Meta: ESPECIE
+Descripcion: color del cuerpo de gris a verde; cuerpo alaragado voluminoso; dorso sin tuberculos; parapodios poco desarrollados dejando dos aberturas; presencia de concha interna; rinoforos enrollados; tentaculos orales enrollados."
+
+| s a vd | 
+
+SukiaSystem reasoner reset.
+SukiaSystem reasoner identGoal: #species.
+
+"---------------------------Structure No. 1---------------------------"
+s := Structure new.
+s name: 'cuerpo'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #gris.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_fondo.
+
+vd := ValueDescriptor new.
+vd value: #verde.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #alargado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #consistencia.
+
+vd := ValueDescriptor new.
+vd value: #voluminoso.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #conformacion.
+
+vd := ValueDescriptor new.
+vd value: #tiene_una_concha_interna.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+"---------------------------Structure No. 2---------------------------"
+s := Structure new.
+s name: 'parapodio'.
+s weight: 0.0.
+
+a := Attribute newWithOneLevel.
+a name: #grado_de_desarrollo.
+
+vd := ValueDescriptor new.
+vd value: #poco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+SukiaSystem reasoner structDescription: s.
+
+(SukiaSystem reasoner identify) inspect.

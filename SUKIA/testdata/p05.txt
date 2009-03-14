@@ -1,0 +1,521 @@
+"---------------------------------------------------- TAXONOMIA DE PRUEBA PARA LA TESIS. PARTE 5-------------------------------------------"
+
+| t21 t22 t23 t24 t25 s a vd gh |
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 21 +++++++++++++++++++++++++++++++++++++ "
+t21 := Taxon new.
+t21 name: #Dolabrifera_dolabrifera.
+t21 level: #species.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+
+a := Attribute newWithOneLevel.
+a name: #tamano.
+
+vd := ValueDescriptor new.
+vd value: #mas_de_7cm_cuando_vivos.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #hasta_4cm_cuando_muertos.
+vd weight: 0.85.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #deprimido_dorsoventralmente.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_fondo.
+
+vd := ValueDescriptor new.
+vd value: #verde_oliva_a_marron_oscuro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #verde_oliva_palido.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #crema_palido.
+vd weight: 0.7.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t21 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #papilas.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #violeta_rosaceo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #blanquecinas.
+vd weight: 0.9.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #verde_oliva_palido.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #crema_palido.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t21 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #concha_interna.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #completamente_rodeada_por_el_manto.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #tamano.
+
+vd := ValueDescriptor new.
+vd value: #reducido.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t21 SAVdescription: s.
+
+"-----------------------Grouping Heuristic No. 1---------------------"
+gh := GroupingHeuristic newWithOneLevel.
+gh name: #lugar_donde_se_encuentra.
+gh weight: 1.0.
+vd := ValueDescriptor new.
+vd value: #generalmente_en_las_pozas_de_marea.
+vd weight: 1.0.
+(gh values) valueDescriptorWithUniqueValue: vd for: GroupingHeuristic oneLevel.
+t21 GHdescription: gh.
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 22 +++++++++++++++++++++++++++++++++++++ "
+t22 := Taxon new.
+t22 name: #Petalifera_ramosa.
+t22 level: #species.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion.
+
+vd := ValueDescriptor new.
+vd value: #verde_claro_a_intenso.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #blanco_traslucido.
+vd weight: 0.6.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_los_puntos.
+
+vd := ValueDescriptor new.
+vd value: #rojizo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t22 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #parapodio.
+
+a := Attribute newWithOneLevel.
+a name: #grado_de_desarrollo.
+
+vd := ValueDescriptor new.
+vd value: #poco.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t22 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #dorso.
+
+a := Attribute newWithOneLevel.
+a name: #contextura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #con_papilas_simples_o_ramificadas.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t22 SAVdescription: s.
+
+"-----------------------Structure No. 4---------------------"
+s := Structure new.
+s name: #rinoforos.
+
+a := Attribute newWithOneLevel.
+a name: #contextura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #con_papilas_simples_o_ramificadas.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t22 SAVdescription: s.
+
+"-----------------------Structure No. 5---------------------"
+s := Structure new.
+s name: #tentaculos_orales.
+
+a := Attribute newWithOneLevel.
+a name: #contextura.
+
+vd := ValueDescriptor new.
+vd value: #lisa.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+vd := ValueDescriptor new.
+vd value: #con_papilas_simples_o_ramificadas.
+vd weight: 0.8.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t22 SAVdescription: s.
+
+"-----------------------Structure No. 6---------------------"
+s := Structure new.
+s name: #palpos_labiales.
+
+a := Attribute newWithOneLevel.
+a name: #grado_de_desarrollo.
+
+vd := ValueDescriptor new.
+vd value: #mucho.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #seccion_en_la_que_son_visibles.
+
+vd := ValueDescriptor new.
+vd value: #en_la_parte_dorsal.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t22 SAVdescription: s.
+
+"-----------------------Structure No. 7---------------------"
+s := Structure new.
+s name: #concha_interna.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #semicubiera.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t22 SAVdescription: s.
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 23 +++++++++++++++++++++++++++++++++++++ "
+t23 := Taxon new.
+t23 name: #Phyllaplysia_engeli.
+t23 level: #species.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #estrecho_y_aplanado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_fondo.
+
+vd := ValueDescriptor new.
+vd value: #verde_intenso_con_agrupaciones_de_pigmento_verde.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_de_los_puntos.
+
+vd := ValueDescriptor new.
+vd value: #rojizo.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t23 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #tentaculos_orales.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #largos_y_aplanados.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t23 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #palpos_labiales.
+
+a := Attribute newWithOneLevel.
+a name: #tamano.
+
+vd := ValueDescriptor new.
+vd value: #pequeno.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t23 SAVdescription: s.
+
+"-----------------------Structure No. 4---------------------"
+s := Structure new.
+s name: #papilas.
+
+a := Attribute newWithOneLevel.
+a name: #tamano.
+
+vd := ValueDescriptor new.
+vd value: #pequeno.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #disposicion.
+
+vd := ValueDescriptor new.
+vd value: #simples_y_ramificadas.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #distribucion.
+
+vd := ValueDescriptor new.
+vd value: #en_el_dorso_y_tambien_sobre_los_rinoforos.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t23 SAVdescription: s.
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 24 +++++++++++++++++++++++++++++++++++++ "
+t24 := Taxon new.
+t24 name: #Aplysiia_dactylomela.
+t24 level: #species.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #alto_y_voluminoso.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_fondo.
+
+vd := ValueDescriptor new.
+vd value: #cafesuzco_a_verde_oliva_con_anillos_u_ocelos_de_pigmento_oscuro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t24 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #pie.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #estrecho_y_prolongado_en_cola_larga.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t24 SAVdescription: s.
+
+" +++++++++++++++++++++++++++++++++++++ Taxon No. 25 +++++++++++++++++++++++++++++++++++++ "
+t25 := Taxon new.
+t25 name: #Notarchus_punctatus.
+t25 level: #species.
+
+"-----------------------Structure No. 1---------------------"
+s := Structure new.
+s name: #cuerpo.
+
+a := Attribute newWithOneLevel.
+a name: #coloracion_del_fondo.
+
+vd := ValueDescriptor new.
+vd value: #marron_claro_a_beige_con_pequenas_manchas_de_pigmento_oscuro.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t25 SAVdescription: s.
+
+"-----------------------Structure No. 2---------------------"
+s := Structure new.
+s name: #papilas.
+
+a := Attribute newWithOneLevel.
+a name: #tamano.
+
+vd := ValueDescriptor new.
+vd value: #pequeno.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #distribucion.
+
+vd := ValueDescriptor new.
+vd value: #en_todo_el_cuerpo_a_excepcion_de_los_rinoforos_y_tentaculos_orales.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #simples_y_ramificadas.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t25 SAVdescription: s.
+
+"-----------------------Structure No. 3---------------------"
+s := Structure new.
+s name: #pie.
+
+a := Attribute newWithOneLevel.
+a name: #forma.
+
+vd := ValueDescriptor new.
+vd value: #estrecho_y_alargado.
+vd weight: 1.0.
+(a values) valueDescriptorWithUniqueValue: vd for: Attribute oneLevel.
+
+s attribute: a.
+
+t25 SAVdescription: s.
+
+" ************************************  Taxonomy *************************************"
+(SukiaSystem taxonomy add: t21 linkedTo: (SukiaSystem taxonomy getTaxonByName: #Dolabrifera)) = nil ifTrue: [t21 inspect].
+(SukiaSystem taxonomy add: t22 linkedTo: (SukiaSystem taxonomy getTaxonByName: #Petalifera)) = nil ifTrue: [t22 inspect].
+(SukiaSystem taxonomy add: t23 linkedTo: (SukiaSystem taxonomy getTaxonByName: #Phyllaplysia)) = nil ifTrue: [t23 inspect].
+(SukiaSystem taxonomy add: t24 linkedTo: (SukiaSystem taxonomy getTaxonByName: #Aplysiia)) = nil ifTrue: [t24 inspect].
+(SukiaSystem taxonomy add: t25 linkedTo: (SukiaSystem taxonomy getTaxonByName: #Notarchus)) = nil ifTrue: [t25 inspect].
+
+SukiaSystem inspect.

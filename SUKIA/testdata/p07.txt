@@ -1,0 +1,148 @@
+"---------------------------------------------------- CASOS-SOLUCION DE PRUEBA PARA LA MC. PARTE 7-------------------------------------------"
+
+| c4 c5914 c67 c8 c10 c11 c12 s d netView1 netView2 netView3 netView4 netView5 netView6 |
+
+d := SAVDescriptor new.
+
+"--------------------------------------------------- del Caso 4 pruebas en JT--------------------------------------------------- "
+c4 := SAVCase new.
+
+s := CaseSolution new.
+s level: #species.
+s name: #Glossodoris_sedna.
+c4 setStatusWith: #+.
+c4 setSolutionWith: s.
+
+d addStructure: 'manto' Attribute: #coloracion_del_borde Value: #amarillo.
+c4 addToDescription: d.
+
+d addStructure: 'rinoforos' Attribute: #coloracion_de_los_apices Value: #rojo.
+c4 addToDescription: d.
+
+"---------------------------------------------- de los Casos 5, 9 y 14 pruebas en JT---------------------------------------------- "
+c5914 := SAVCase new.
+
+s := CaseSolution new.
+s level: #family.
+s name: #Chromodorididae. 
+c5914 setStatusWith: #+.
+c5914 setSolutionWith: s.
+
+d addStructure: 'rinoforos' Attribute: #coloracion_del_raquis Value: #blanco.
+c5914 addToDescription: d.
+
+d addStructure: 'rinoforos' Attribute: #coloracion Value: #blanco.
+c5914 addToDescription: d.
+
+d addStructure: 'branquia' Attribute: #coloracion Value: #blanco.
+c5914 addToDescription: d.
+
+d addStructure: 'pie' Attribute: #disposicion Value: #sobresale_al_manto.
+c5914 addToDescription: d.
+
+"------------------------------------------------ de los Casos 6 y 7 pruebas en JT------------------------------------------------ "
+c67 := SAVCase new.
+
+s := CaseSolution new.
+s level: #species.
+s name: #Hypselodoris_agassizii. 
+c67 setStatusWith: #+.
+c67 setSolutionWith: s.
+
+d addStructure: 'branquia' Attribute: #coloracion_de_los_apices Value: #azul_oscuro_a_negro.
+c67 addToDescription: d.
+
+d addStructure: 'pie' Attribute: #disposicion Value: #sobresale_al_manto.
+c67 addToDescription: d.
+
+d addStructure: 'manto' Attribute: #coloracion_linea_exterior_del_borde Value: #amarillo.
+c67 addToDescription: d.
+
+d addStructure: 'manto' Attribute: #coloracion_linea_interior_del_borde Value: #verde_claro.
+c67 addToDescription: d.
+
+d addStructure: 'rinoforos' Attribute: #coloracion_del_raquis Value: #amarillo.
+c67 addToDescription: d.
+
+"--------------------------------------------------- del Caso 8 pruebas en JT--------------------------------------------------- "
+c8 := SAVCase new.
+
+s := CaseSolution new.
+s level: #species.
+s name: #Glossodoris_dalli. 
+c8 setStatusWith: #+.
+c8 setSolutionWith: s.
+
+d addStructure: 'cuerpo' Attribute: #forma Value: #ovalado.
+c8 addToDescription: d.
+
+"--------------------------------------------------- del Caso 10 pruebas en JT--------------------------------------------------- "
+c10 := SAVCase new.
+
+s := CaseSolution new.
+s level: #species.
+s name: #Aplysiia_dactylomela. 
+c10 setStatusWith: #+.
+c10 setSolutionWith: s.
+
+d addStructure: 'cuerpo' Attribute: #conformacion Value: #tiene_una_concha_interna.
+c10 addToDescription: d.
+
+d addStructure: 'cuerpo' Attribute: #coloracion_del_fondo Value: #cafesuzco_a_verde_oliva_con_anillos_u_ocelos_de_pigmento_oscuro.
+c10 addToDescription: d.
+
+d addStructure: 'cuerpo' Attribute: #forma Value: #alto_alargado_y_contractil.
+c10 addToDescription: d.
+
+d addStructure: 'parapodio' Attribute: #grado_de_desarrollo Value: #mucho.
+c10 addToDescription: d.
+
+d addStructure: 'parapodio' Attribute: #simetria Value: #simetricos_libres.
+c10 addToDescription: d.
+
+"--------------------------------------------------- del Caso 11 pruebas en JT--------------------------------------------------- "
+c11 := SAVCase new.
+
+s := CaseSolution new.
+s level: #species.
+s name: #Chromodoris_kempfi. 
+c11 setStatusWith: #+.
+c11 setSolutionWith: s.
+
+d addStructure: 'manto' Attribute: #coloracion_de_la_banda_dorsal_continua Value: #blanco.
+c11 addToDescription: d.
+
+"--------------------------------------------------- del Caso 12 pruebas en JT--------------------------------------------------- "
+c12 := SAVCase new.
+
+s := CaseSolution new.
+s level: #family.
+s name: #Aplysiidae. 
+c12 setStatusWith: #+.
+c12 setSolutionWith: s.
+
+d addStructure: 'cuerpo' Attribute: #coloracion Value: #verduzco.
+c12 addToDescription: d.
+
+d addStructure: 'cuerpo' Attribute: #conformacion Value: #tiene_una_concha_interna.
+c12 addToDescription: d.
+
+d addStructure: 'cuerpo' Attribute: #consistencia Value: #voluminoso.
+c12 addToDescription: d.
+
+"############################# Agregar casos a la memoria dinamica #############################"
+SukiaSystem caseMemory add: c4.
+SukiaSystem caseMemory add: c5914.
+SukiaSystem caseMemory add: c67.
+SukiaSystem caseMemory add: c8.
+SukiaSystem caseMemory add: c10.
+SukiaSystem caseMemory add: c11.
+SukiaSystem caseMemory add: c12.
+
+"########################## Representacion grafica de la memoria dinamica ##########################"
+netView1 := RDNetView openWith: ((SukiaSystem caseMemory root nets) at: 1).
+netView2 := RDNetView openWith: ((SukiaSystem caseMemory root nets) at: 2).
+netView3 := RDNetView openWith: ((SukiaSystem caseMemory root nets) at: 3).
+netView4 := RDNetView openWith: ((SukiaSystem caseMemory root nets) at: 4).
+netView5 := RDNetView openWith: ((SukiaSystem caseMemory root nets) at: 5).
+netView6 := RDNetView openWith: ((SukiaSystem caseMemory root nets) at: 6).

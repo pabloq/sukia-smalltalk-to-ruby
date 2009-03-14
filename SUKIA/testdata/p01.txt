@@ -1,0 +1,4 @@
+"---------------------------------------------------- TAXONOMIA DE PRUEBA PARA LA TESIS. PARTE 1-------------------------------------------"
+
+SukiaSystem := Sukia new.
+SukiaSystem taxonomicGroupName: #mollusk.
